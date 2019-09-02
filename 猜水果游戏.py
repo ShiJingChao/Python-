@@ -85,5 +85,6 @@ while k < 10:
                 break
     if choose == "3":
         print("程序结束")
+        print(111)
         break
 
