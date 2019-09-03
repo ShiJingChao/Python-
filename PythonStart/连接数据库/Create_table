@@ -1,0 +1,4 @@
+
+
+
+CREATE TABLE TEST(id int ,name varchar(20));
