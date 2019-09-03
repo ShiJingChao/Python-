@@ -1,1 +1,13 @@
 .idea
+*.txt
+*.html
+*.css
+*.jpg
+*.png
+*.rar
+*.gif
+*.pyc
+*.db
+*.js
+*.chm
+*.doc
