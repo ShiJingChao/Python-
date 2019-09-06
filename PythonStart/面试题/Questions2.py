@@ -150,36 +150,38 @@ class Solution(object):
         """
         :type s: str
         :rtype: bool
+
         """
-        a = len(s)
-        l = []
-        for i in range(a):
-            l.append(0)
-        for i in range(a):
-            if i == 0:
-                l[0] = s[0]
-            else:
-                j = i - 1
-                while l[j] == 0:
-                    j -= 1
-                    if j == -1:
-                        break
-                if j == -1 or s[i] == '(' or s[i] == '[' or s[i] == '{':
-                    l[i] = s[i]
-                elif l[j] == "(" and s[i] == ')' or l[j] == '[' and s[i] == ']' or l[j] == '{' and s[i] == '}':
-                    l[j] = 0
-                else:
-                    return False
-        else:
-            if a == 0:
-                return True
-            for i in l:
-                if i != 0:
-                    return False
-            else:
-                return True
+        
+        # a = len(s)
+        # l = []
+        # for i in range(a):
+        #     l.append(0)
+        # for i in range(a):
+        #     if i == 0:
+        #         l[0] = s[0]
+        #     else:
+        #         j = i - 1
+        #         while l[j] == 0:
+        #             j -= 1
+        #             if j == -1:
+        #                 break
+        #         if j == -1 or s[i] == '(' or s[i] == '[' or s[i] == '{':
+        #             l[i] = s[i]
+        #         elif l[j] == "(" and s[i] == ')' or l[j] == '[' and s[i] == ']' or l[j] == '{' and s[i] == '}':
+        #             l[j] = 0
+        #         else:
+        #             return False
+        # else:
+        #     if a == 0:
+        #         return True
+        #     for i in l:
+        #         if i != 0:
+        #             return False
+        #     else:
+        #         return True
 
 
-s = Solution()
-print(s.isValid("(([]){})"))
+# s = Solution()
+# print(s.isValid("({}[()][()])"))
 

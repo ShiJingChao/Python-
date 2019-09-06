@@ -1,0 +1,6 @@
+print('小可爱')
+print('你在哪里')
+print('我去找你')
+print('别不说话')
+print('你说对')
+print('我是yingyingguai')
